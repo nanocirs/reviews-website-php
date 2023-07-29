@@ -1,0 +1,279 @@
+:root {
+    --color-dark:#000;
+    --color-primary:#14213d;
+    --color-contrast:#fca311;
+    --color-neutral:#ebebeb;
+    --color-light:#fff;
+    --color-error:#f00;
+    --color-star:#ffe600;
+}
+body {
+    margin:0 auto;
+    min-height:100vh;
+    background-color:var(--color-neutral); 
+    color:var(--color-dark);
+    font-family:Verdana;
+}
+.navbar {
+    display:flex;
+    min-height:50px;
+    padding:.5rem 1rem;
+    align-items:center;
+    background-color:var(--color-primary);
+    box-shadow:0 1px 16px 0 rgba(0,0,0,.25);
+    border-bottom:1px solid var(--color-neutral);
+    font-family:'Open Sans', sans-serif;
+    color:var(--color-light);
+}
+.rating {
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+}
+.starselected {
+    color:var(--color-contrast);
+}
+textarea:focus,
+input:focus {
+    outline:none;
+}
+textarea {
+    resize:none;
+    font-size:1rem;
+}
+.btn {
+    background-color:var(--color-primary);
+    color:var(--color-light);
+    border:none;
+    border-radius:6px;
+    padding:10px 16px;
+}
+.review {
+    margin:10px auto 30px auto;
+    padding:20px 20px 10px 20px;
+    width:600px;
+    height:auto;
+    background-color:var(--color-light);
+    color:var(--color-dark);
+    line-height:1.75rem;
+    border-radius:12px;
+    box-shadow:1px 1px 4px 0 rgba(0,0,0,.25);
+}
+.review_username {
+    font-weight:bold; 
+    color:var(--color-primary);
+}
+.review_area {
+    width:591px; 
+    height:100px; 
+    margin:10px auto 15px auto; 
+    font-size:1rem; 
+    font-family:Verdana; 
+    resize:none;
+}
+.info {
+    color:var(--color-dark);
+}
+.error {
+    color:var(--color-error);
+}
+@media(max-width: 767px) {
+    body {
+        font-size:2.25rem;
+        line-height:3.75rem;
+    }
+    label {
+        font-size:1.3rem;
+        margin-right:10px;
+    }
+    .star {
+        font-size:2.4rem;
+        letter-spacing:1.3rem;
+    }
+    h1, h2 {
+        font-size:unset;
+    }
+    .review {
+        margin:20px auto 40px auto;
+        padding:30px 40px 10px 40px;
+        width:max(320px, 80%); 
+        font-size:1.3rem;
+        line-height:2.5rem;
+    }
+    .review:first-child {
+        margin-top:40px;
+    }
+    .review_area {
+        width:96%; 
+        height:200px; 
+        margin:10px auto 10px auto;
+        font-size:1.3rem;
+    }
+    #input_name {
+        display:block;
+        width:96%; 
+        height:50px; 
+        font-size:1.3rem;
+        margin:20px 0;
+    }
+    .btn {
+        font-size:1.6rem;
+        margin-bottom:30px;
+        padding:16px 24px;
+    }
+    .error {
+        font-size:1.3rem;
+        margin:0;
+        margin-bottom:10px;
+    }
+    .info {
+        margin-bottom:10px; 
+        font-size:1rem; 
+        text-align:right;
+    }
+    #pagebar {
+        margin-top:50px;
+        padding:10px 16px;
+        text-decoration:none;
+        font-size:2rem;
+        font-weight:bold;
+        text-align:center;
+        user-select:none;
+    }
+    #pagebar a {
+        display:center;    
+        padding:12px 32px;
+        margin:0 8px;
+        text-decoration:none;
+        transition:background-color .3s;
+    }
+    #pagebar a.active {
+        background-color:var(--color-primary);
+        color:var(--color-light);
+        border-radius:4px;
+    }
+    #pagebar a:hover:not(.active) {
+        border-radius:4px;
+    }
+    .only_text_div {
+        width:90%; 
+    }
+}
+@media(min-width: 768px) {
+    body {
+        font-size:1rem;
+    }
+    .content {
+        width:95%;
+        margin:50px auto 0;
+    }
+    .container {
+        display:flex;
+        width:1400px;
+        max-width:95%;
+        margin:0 auto;
+    }
+    .logo {
+        text-align:left;
+    }
+    .logo h1 {
+        font-size:1.6rem;
+    }
+    .only_text_div {
+        width:60%; 
+        margin:0 auto;
+    }
+    h1 {
+        margin:0;
+        font-size:2rem;
+        text-align:center;
+    }
+    h2 {
+        margin-top:0;
+        font-size:1.5rem;
+        text-align:center;
+    }
+    ul, p {
+        line-height:2rem;
+    }
+    a:link {
+        color:#1c6cff;
+    }
+    a:visited {
+        color:#1c6cff;
+    }
+    .error {
+        margin:10px auto 10px auto;
+    }
+    .star {
+        font-size:1.5rem;
+    }
+    .review {
+        width:600px;
+        line-height:1.75rem;
+    }
+    #input_name {
+        margin-right:10px; 
+        width:270px; 
+        height:25px; 
+        font-size:1rem; 
+        font-family:Verdana;
+    }
+    .btn {
+        font-size:16px; 
+        font-family:Verdana;
+    }
+    #reviews_container_parent {
+        display:flex;
+        margin:auto;
+        width:1400px; 
+    }
+    @media(max-width: 1500px) {
+        #reviews_container_parent {
+            display:block;
+            margin:auto;
+            width:95%; 
+        }
+    }
+    #reviews_container_l,
+    #reviews_container_r {
+        flex:1;
+        width:auto;
+    }
+    .info {
+        margin-bottom:0; 
+        text-align:right;
+        font-size:0.85rem;
+    }
+    .separator {
+        height:100px;
+    }
+    #pagebar {
+        margin-top:50px;
+        padding:10px 16px;
+        text-decoration:none;
+        font-size:17px;
+        text-align:center;
+        user-select:none;
+    }
+    #pagebar a {
+        display:center;    
+        color:var(--color-dark);
+        padding:6px 16px;
+        margin:0 2px;
+        text-decoration:none;
+        transition:background-color .3s;
+    }
+    #pagebar a.active {
+        background-color:var(--color-primary);
+        color:var(--color-light);
+        border-radius:4px;
+    }
+    #pagebar a:hover:not(.active) {
+        background-color:var(--color-neutral);
+        border-radius:4px;
+    }
+    #pagebar #nohover:not(.active) {
+        background-color:var(--color-dark);
+    }
+}
