@@ -10,5 +10,5 @@ If the database you point this script to already has a table called _reviews_ in
 
 Access index.html with the browser and you will have a working reviews system.
 
-## Info
+## Further information
 The reviews table stores the IP of the user that entered the review as a way to prevent flooding. Every IP can publish a review once every 2 hours.
